@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Wireless Earbuds",
+    "company": "Company A",
+    "price": 49.99,
+    "originalPrice": 59.99,
+    "rating": 4.5,
+    "onSale": true
+  },
+  {
+    "name": "Smartphone Case",
+    "company": "Company B",
+    "price": 19.99,
+    "originalPrice": 19.99,
+    "rating": 4.2,
+    "onSale": false
+  },
+  {
+    "name": "Gaming Mouse",
+    "company": "Company C",
+    "price": 39.99,
+    "originalPrice": 49.99,
+    "rating": 4.8,
+    "onSale": true
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "company": "Company A",
+    "price": 99.99,
+    "originalPrice": 99.99,
+    "rating": 4.7,
+    "onSale": false
+  },
+  {
+    "name": "Laptop Stand",
+    "company": "Company D",
+    "price": 29.99,
+    "originalPrice": 39.99,
+    "rating": 4.4,
+    "onSale": true
+  },
+  {
+    "name": "Smart Watch",
+    "company": "Company E",
+    "price": 149.99,
+    "originalPrice": 149.99,
+    "rating": 4.6,
+    "onSale": false
+  },
+  {
+    "name": "Portable Charger",
+    "company": "Company B",
+    "price": 24.99,
+    "originalPrice": 34.99,
+    "rating": 4.3,
+    "onSale": true
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "company": "Company C",
+    "price": 59.99,
+    "originalPrice": 69.99,
+    "rating": 4.9,
+    "onSale": true
+  },
+  {
+    "name": "LED Desk Lamp",
+    "company": "Company D",
+    "price": 34.99,
+    "originalPrice": 34.99,
+    "rating": 4.1,
+    "onSale": false
+  },
+  {
+    "name": "Noise Cancelling Headphones",
+    "company": "Company E",
+    "price": 199.99,
+    "originalPrice": 249.99,
+    "rating": 4.8,
+    "onSale": true
+  },
+  {
+    "name": "USB-C Hub",
+    "company": "Company A",
+    "price": 49.99,
+    "originalPrice": 49.99,
+    "rating": 4.2,
+    "onSale": false
+  },
+  {
+    "name": "Wireless Charger",
+    "company": "Company B",
+    "price": 39.99,
+    "originalPrice": 44.99,
+    "rating": 4.5,
+    "onSale": true
+  },
+  {
+    "name": "Action Camera",
+    "company": "Company C",
+    "price": 129.99,
+    "originalPrice": 129.99,
+    "rating": 4.7,
+    "onSale": false
+  },
+  {
+    "name": "Fitness Tracker",
+    "company": "Company E",
+    "price": 99.99,
+    "originalPrice": 119.99,
+    "rating": 4.4,
+    "onSale": true
+  },
+  {
+    "name": "Tablet Stand",
+    "company": "Company D",
+    "price": 19.99,
+    "originalPrice": 19.99,
+    "rating": 4.3,
+    "onSale": false
+  },
+  {
+    "name": "HDMI Cable",
+    "company": "Company A",
+    "price": 14.99,
+    "originalPrice": 19.99,
+    "rating": 4.0,
+    "onSale": true
+  },
+  {
+    "name": "Drone",
+    "company": "Company C",
+    "price": 299.99,
+    "originalPrice": 349.99,
+    "rating": 4.9,
+    "onSale": true
+  },
+  {
+    "name": "Electric Scooter",
+    "company": "Company E",
+    "price": 499.99,
+    "originalPrice": 499.99,
+    "rating": 4.6,
+    "onSale": false
+  },
+  {
+    "name": "Backpack",
+    "company": "Company B",
+    "price": 59.99,
+    "originalPrice": 79.99,
+    "rating": 4.5,
+    "onSale": true
+  },
+  {
+    "name": "Tripod",
+    "company": "Company D",
+    "price": 29.99,
+    "originalPrice": 29.99,
+    "rating": 4.2,
+    "onSale": false
+  }
+]

@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  padding: 20px;
+}
+.filters {
+  width: 25%;
+  background-color: white;
+  padding: 15px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.filters h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.filters label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.filters select,
+.filters input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.products-container {
+  flex: 1;
+}
+.search-bar {
+  margin-bottom: 20px;
+  width: 97.5%;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.product-card.on-sale {
+  border: 2px solid green;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.product-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.product-price {
+  color: green;
+  font-size: 1em;
+  font-weight: bold;
+}
+.original-price {
+  text-decoration: line-through;
+  color: red;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+.pagination button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  margin-top: 20px;
+}
+.products {
+    border: 2px solid red;
+    height: 69%;
+}
