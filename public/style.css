@@ -117,3 +117,29 @@ footer {
     border: 2px solid red;
     height: 69%;
 }
+/* single product design */
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.single-product-container {
+  border: 1px solid black;
+  width: 170px;
+  height: 160px;
+  padding-left: 10px;
+}
+.single-product-container p {
+  font-size: 13px;
+}
+.original-price {
+  text-decoration: line-through;
+  color: black;
+}
+.pageNum-container {
+  font-size: 16px;
+  color: blue;
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+}

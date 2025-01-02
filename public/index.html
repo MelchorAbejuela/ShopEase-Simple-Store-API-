@@ -14,7 +14,7 @@
     <div class="filters">
       <h2>Filter Products</h2>
       <label for="company">Company:</label>
-      <select id="company">
+      <select id="company" name="company">
         <option value="">All</option>
         <option value="Company A">Company A</option>
         <option value="Company B">Company B</option>
@@ -31,14 +31,14 @@
       <input type="number" id="priceMax" placeholder="Max Price" step="0.01">
 
       <label for="onSale">On Sale:</label>
-      <select id="onSale">
+      <select id="onSale" name="onSale">
         <option value="">All</option>
         <option value="true">Yes</option>
         <option value="false">No</option>
       </select>
 
       <label for="sort">Sort By:</label>
-      <select id="sort">
+      <select id="sort" name="sort">
         <option value="name">Name</option>
         <option value="price">Price</option>
         <option value="rating">Rating</option>
@@ -49,15 +49,15 @@
         <input type="text" id="search" placeholder="Search products...">
       </div>
 
-      <div class="products" id="products">
-        <!-- Products will be dynamically rendered here -->
-      </div>
+      <!-- products container -->
+      <div class="products" id="products"></div>
+      <div class="pageNum-container">Page: 1</div>
 
       <div class="pagination" id="pagination">
         <!-- Page numbers will be dynamically generated here -->
         <label for="jumpToPage">Jump to Page:</label>
         <input type="number" id="jumpToPage" min="1" placeholder="Page #">
-        <button onclick="jumpToPage()">Go</button>
+        <button id="jumpToPageButton" type="submit">Go</button>
       </div>
     </div>
   </div>
@@ -66,6 +66,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
 
 </body>
 </html>
