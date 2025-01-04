@@ -27,8 +27,6 @@ const fetchProductsByQueries = async (pageNum) => {
   const products = await axios.get("shopease/api/products", {
     params: queryObject,
   });
-  
-  console.log(queryObject)
 
   let html = "";
   if (products.data.products.length !== 0) {
@@ -75,7 +73,41 @@ options.forEach((option) => {
 
 // search bar
 const searchBar = document.querySelector("#search");
-searchBar.addEventListener("keyup", (e) => {
+searchBar.addEventListener("keyup", () => {
   queryObject.name = searchBar.value; // Use the current value of the search bar
   fetchProductsByQueries(); // Call the fetch function to update the results
+});
+
+// function for numerical filter
+document.querySelectorAll('.numerical-filter').forEach((input) => {
+
+  input.addEventListener("keyup", (e) => {
+    // local array so that it clears up the value too every time we update the value or trigger the event
+    let numericalFilter = []
+
+    // get the value of those 3 numerical filter
+    const rating = document.querySelector("#rating").value
+    const priceMin = document.querySelector("#priceMin").value
+    const priceMax = document.querySelector("#priceMax").value
+
+    // if rating is truthy or had a value, then we push it to the numericalFilter array
+    if(rating) {
+      numericalFilter.push(`rating>=${rating}`)
+    } 
+
+    // if rating is truthy or had a value, then we push it to the numericalFilter array
+    if (priceMin) {
+      numericalFilter.push(`price>=${priceMin}`)
+    } 
+
+    // if rating is truthy or had a value, then we push it to the numericalFilter array
+    if (priceMax) {
+      numericalFilter.push(`price<=${priceMax}`)
+    }
+
+    // join all the queries in one paragraph
+    queryObject.numericalFilter = numericalFilter.join(",")
+    fetchProductsByQueries()
+  });
+
 });
