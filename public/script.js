@@ -71,11 +71,24 @@ options.forEach((option) => {
   });
 });
 
-// search bar
+// debouncer function
+function debounce (fun, delay) {
+  let timeout;
+  return function () {
+    clearTimeout(timeout)
+    timeout = setTimeout(() => {
+      fun()
+    }, delay);
+  }
+}
+
+// create an instance of debounce
+const updatedDebounce = debounce(fetchProductsByQueries, 1000)
+// search bar function
 const searchBar = document.querySelector("#search");
-searchBar.addEventListener("keyup", () => {
+searchBar.addEventListener("input", () => {
   queryObject.name = searchBar.value; // Use the current value of the search bar
-  fetchProductsByQueries(); // Call the fetch function to update the results
+  updatedDebounce()
 });
 
 // function for numerical filter
